@@ -1,0 +1,19 @@
+Dennis Bot Commands:
+
+    ;help                           - Command helps
+    ;dennis                         - Dennis bot will respond with "Dennis! Dennis! Dennis!"
+    ;join                           - Invite Dennis bot to your voice channel
+    ;leave                          - Disconnect Dennis bot from voice channel
+    ;sing                           - Dennis bot (it's Gam actually) will sing
+    ;play <insert youtube url>      - Plays the youtube audio from that url (please don't play huge youtube files my internet no good)
+    ;pause                          - Pause whatever is playing
+    ;resume                         - Resume whatever is playing
+    ;stop                           - Stop whatever is playing
+    ;echo <insert text>             - Dennis will say whatever there is in <insert text>
+    ;saybruh                        - Dennis bot will say ":/"
+    ;bruh                           - Dennis bot will say ":/"
+    ;saysomething                   - Dennis bot will say "I'm the best midlaner! bruh"
+    ;hi                             - Dennis bot will say "I'm the best midlaner! bruh"
+
+Work still in progress!
+    
