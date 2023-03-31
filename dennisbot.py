@@ -56,7 +56,7 @@ async def leave(ctx):
         await stop(ctx)
         await ctx.send('Big Boy Dennis is leaving now :/')
     else:
-        await ctx.send('I\'m not in a voice channel')
+        await ctx.send('I\'m not in a voice channel bruh')
 
 @client.command()
 async def sing(ctx):
@@ -78,8 +78,9 @@ async def play(ctx, url):
     try:
         if song:
             os.remove("song.mp3")
+        await ctx.send('audio is processing bud, wait until it finishes')
     except PermissionError:
-        await ctx.send('Another song is playing')
+        await ctx.send('another song is playing dumbass')
 
     if not voice.is_connected():
         channel = ctx.author.voice.channel
@@ -89,8 +90,8 @@ async def play(ctx, url):
         'format': 'bestaudio/best',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp3',
-            'preferredquality': '192',
+            'preferredcodec': 'm4a',
+            'preferredquality': '320',
         }],
     }
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
@@ -117,19 +118,16 @@ async def resume(ctx):
     if voice.is_paused():
         voice.resume()
     else:
-        await ctx.send("Nothing is paused bruh")
+        await ctx.send("Nothing was paused bruh")
 
 @client.command()
 async def stop(ctx):
     voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
     voice.stop()
+    await ctx.send("ok whatever")
 
         
 
         
-        
-
-
-
 
 client.run('ODQ2NDUwNTUwODc5MTU4MzMy.YKvsgQ.RxPiIY1AHR1TsGTfikaKYyquxKs')
